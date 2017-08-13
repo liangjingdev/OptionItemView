@@ -1,6 +1,24 @@
 # OptionItemView
 快速构建常用的选项条目布局控件！
 
+## 使用方法：
+* 1、
+```javascript
+
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+* 2、
+```javascript
+dependencies {
+	        compile 'com.github.liangjingdev:OptionItemView:1bf5410820'
+	}
+```
+
 ## 1、简述
 在项目开发中经常遇到类似“设置”功能的需求，一般都要做一些简单的选项条目布局，一个条目可以会用到布局+多个控件（文本或图标），
 一个条目在xml中布局还算可以接受了，但如果一个设置界面的选项条目有10个，还是一样的布局，这样就显示特别臃肿了，而一般一个界面的选项条目有3个以上。
