@@ -325,7 +325,7 @@ public class OptionItemView extends View {
      */
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        //是一个整体，则不拆分各区域的点击
+        //是一个整体，则不拆分各区域的点击（那么直接返回super.onTouchEvent(event)即可，即交由父类来处理--回调onClick()方法）
         if (!mSpliteMode)
             return super.onTouchEvent(event);
 
